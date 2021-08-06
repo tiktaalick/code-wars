@@ -28,7 +28,11 @@ package kata.kyu6;
  * // =>  WE ARE THE CHAMPIONS MY FRIEND
  */
 public class DubStep {
-    public static String SongDecoder(String song) {
+    private DubStep() {
+
+    }
+
+    public static String songDecoder(String song) {
         return song.replaceAll("(WUB)+", " ").trim();
     }
 }

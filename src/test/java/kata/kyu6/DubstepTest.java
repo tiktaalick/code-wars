@@ -7,23 +7,23 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class DubstepTest {
     @Test
     public void Test1() {
-        assertEquals("ABC", new DubStep().SongDecoder("WUBWUBABCWUB"));
+        assertEquals("ABC", DubStep.songDecoder("WUBWUBABCWUB"));
     }
 
     @Test
     public void Test2() {
-        assertEquals("R L", new DubStep().SongDecoder("RWUBWUBWUBLWUB"));
+        assertEquals("R L", DubStep.songDecoder("RWUBWUBWUBLWUB"));
     }
 
     @Test
     public void Test3() {
-        assertEquals("WE ARE THE CHAMPIONS MY FRIEND", new DubStep().SongDecoder(
+        assertEquals("WE ARE THE CHAMPIONS MY FRIEND", DubStep.songDecoder(
                 "WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"));
     }
 
     @Test
     public void Test4() {
-        assertEquals("I AM X", new DubStep().SongDecoder(
+        assertEquals("I AM X", DubStep.songDecoder(
                 "WUBWUBIWUBAMWUBWUBX"));
     }
 }

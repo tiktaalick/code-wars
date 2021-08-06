@@ -23,7 +23,7 @@ public class ArrayDiff {
         List<Integer> result = new ArrayList<>();
 
         Arrays.stream(arrayA).forEach(elementA -> {
-            if (!Arrays.stream(arrayB).anyMatch(element -> element == elementA)) {
+            if (!Arrays.stream(arrayB).anyMatch(elementB -> elementB == elementA)) {
                 result.add(elementA);
             }
         });
